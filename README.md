@@ -3,7 +3,9 @@
 Documentation: OpenAPI/Swagger
 
 Frontend: React
+
 Backend: Express + Typescript
+
 Persistent storage: MongoDB
 
 ## Configuration
