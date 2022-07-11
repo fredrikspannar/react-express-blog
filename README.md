@@ -15,11 +15,11 @@ SWAGGER_API_VERSION=0.1
 
 ## Backend API Documentation
 
-Created as OpenAPI/Swagger with (swagger-jsdoc)[https://www.npmjs.com/package/swagger-jsdoc] annotations before a route.
+Created as OpenAPI/Swagger with [swagger-jsdoc](https://www.npmjs.com/package/swagger-jsdoc) annotations before a route.
 
-Read more about annotations on (swagger-jsdoc)[https://www.npmjs.com/package/swagger-jsdoc]
-Example route annotations: (swagger-jsdoc example 1)[https://github.com/Surnet/swagger-jsdoc/blob/v6/examples/app/routes.js]
-JSDoc first steps ( with some examples also ): (first steps)[https://github.com/Surnet/swagger-jsdoc/blob/v6/docs/FIRST-STEPS.md]
+Read more about annotations on [swagger-jsdoc](https://www.npmjs.com/package/swagger-jsdoc)
+Example route annotations: [swagger-jsdoc example 1](https://github.com/Surnet/swagger-jsdoc/blob/v6/examples/app/routes.js)
+JSDoc first steps ( with some examples also ): [first steps](https://github.com/Surnet/swagger-jsdoc/blob/v6/docs/FIRST-STEPS.md)
 
 Example in server/src/routes.ts:
 
