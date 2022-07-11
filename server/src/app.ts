@@ -41,10 +41,12 @@ if ( process.env.NODE_ENV === 'development' ) {
         apis: ['./server/src/routes.ts'], 
       };
 
+      var options = {
+          customCss: '.try-out { display: none !important; }'
+      };
+
     const swaggerSpec = swaggerJSDoc(swaggerOptions);
-    app.use('/docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec, {
-        explorer: true
-    }));
+    app.use('/docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec, options));
 }
 
 // routes

@@ -1,23 +1,26 @@
 import { Router, Request, Response, NextFunction } from 'express';
+
+import { getPage } from './controllers/pageController';
 import log from './utils/log';
 
 const router = Router();
 
+
 /**
  * @openapi
- * /:
+ * /page/(:slug):
  *   get:
- *     description: Welcome to swagger-jsdoc!
+ *     description: Get page by slug. Like for example GET /page/about
+ *     parameters:
+ *       - name: slug
+ *         in: path
+ *         required: true
+ *         type: string
  *     responses:
  *       200:
- *         description: Returns a mysterious string with a root.
+ *         description: Returns a mysterious object with the page.
  */
-router.get('/', (req:Request, res:Response) => {
-
-    log('debug', 'GET request /');
-
-    res.status(200).send('Root here!');
-});
+router.get('/page/:slug', getPage);
 
 
 
