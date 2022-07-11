@@ -6,7 +6,15 @@ import log from '../utils/log';
 
 export const getPage = (req:Request, res:Response) => {
 
-    log('debug', 'GET request /');
+    log('debug', 'GET request /page');
+
+    res.status(200).send('Root here!');
+
+}
+
+export const addPage = (req:Request, res:Response) => {
+
+    log('debug', 'POST request /page');
 
     res.status(200).send('Root here!');
 

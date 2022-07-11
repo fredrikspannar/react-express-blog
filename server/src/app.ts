@@ -42,7 +42,7 @@ if ( process.env.NODE_ENV === 'development' ) {
       };
 
       var options = {
-          customCss: '.try-out { display: none !important; }'
+          customCss: 'input:disabled, .try-out { display: none !important; }'
       };
 
     const swaggerSpec = swaggerJSDoc(swaggerOptions);
