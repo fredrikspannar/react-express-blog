@@ -11,7 +11,7 @@ import swaggerJSDoc from 'swagger-jsdoc';
 import dotenv from 'dotenv';
 
 import log from './utils/log';
-import router from './routes';
+import routes from './routes';
 
 // get .env-file
 dotenv.config();
@@ -48,7 +48,7 @@ if ( process.env.NODE_ENV === 'development' ) {
 }
 
 // routes
-app.use(router);
+app.use(routes);
 
 // export our app 
 export default app;
